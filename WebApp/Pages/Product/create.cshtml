@@ -1,0 +1,31 @@
+﻿@page
+@model WebApp.Model.Product
+@{
+}
+<h4>form</h4>
+<form action="/" method="post">
+    <div>
+    <label asp-for="name"></label>
+    <input asp-asp-for="name"/>
+
+    </div>
+    <div>
+        <label asp-for="price"></label>
+        <input asp-asp-for="price" />
+
+    </div>
+    <div>
+        <label asp-for="stock"></label>
+        <input asp-asp-for="stock" />
+
+    </div>
+    <div>
+        <label asp-for="url"></label>
+        <input asp-asp-for="url" />
+
+    </div>
+    @* <div>
+        <select asp-for="product.status" asp-items="@html.GetEnumSelectList<productasattus>();>"
+    </div>
+     *@
+</form>

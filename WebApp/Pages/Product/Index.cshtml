@@ -1,0 +1,31 @@
+﻿@page
+@model WebApp.Pages.Product.IndexModel
+@{
+}
+
+<h1> product </h1>
+<a asp-page="create" class="btn btn-primary">Add</a>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <td>name</td>
+        <td>price</td>
+        <td>stock</td>
+        <td>url</td>
+        <td>status</td>
+        <td>action</td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a class="btn btn-warning" asp-page-handler="edit" asp-page="create">edit</a>
+                <a class="btn btn-danger" asp-page-handler="delete" asp-page="create">edit</a>
+            </td>
+        </tr>
+
+    </thead>
+</table>
